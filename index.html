@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Bureaucratic Cookie Banner ⚖️🍪</title>
+  <meta name="description" content="A website that is 100% GDPR cookie preferences. Unchecking Existential Tracking spawns 14 sub-toggles, a marble balancing beam, and a notary stamp!">
+  <!-- Custom inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23d4a373' stroke='%238d5b4c' stroke-width='3'/%3E%3Ccircle cx='24' cy='22' r='4' fill='%23583101'/%3E%3Ccircle cx='40' cy='24' r='3.5' fill='%23583101'/%3E%3Ccircle cx='22' cy='38' r='3' fill='%23583101'/%3E%3Ccircle cx='36' cy='42' r='4.5' fill='%23583101'/%3E%3Ccircle cx='33' cy='31' r='3' fill='%23583101'/%3E%3Crect x='8' y='8' width='22' height='26' rx='2' fill='%23ffffff' stroke='%23333' stroke-width='1.5' transform='rotate(-15 8 8)'/%3E%3Cpath d='M10 14 L22 14 M10 18 L20 18 M10 22 L18 22' stroke='%23e63946' stroke-width='1.5' transform='rotate(-15 8 8)'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Blurred background page simulating actual content -->
+  <div id="dummy-content" aria-hidden="true">
+    <header class="dummy-nav">
+      <div class="dummy-logo">🐾 DAILY KITTEN DISPATCH</div>
+      <div class="dummy-links"><span>Cat Facts</span><span>Gallery</span><span>Nap Times</span></div>
+    </header>
+    <main class="dummy-main">
+      <h1>Today's Cutest Kitten: Sir Bartholomew Fluffington III</h1>
+      <p>Here is an exclusive photo of Sir Bartholomew taking an afternoon snooze in a teacup...</p>
+      <div class="dummy-photo-placeholder">
+        <span>[PHOTO BLURRED UNDER EU REGULATION 2026/894-B]</span>
+        <small>Please resolve your 48-page cookie consent dossier below to view this image.</small>
+      </div>
+      <p class="dummy-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </main>
+  </div>
+
+  <!-- Audio toggle floating widget -->
+  <div class="audio-control">
+    <button id="sound-btn" class="bureau-btn micro-btn" title="Toggle Administrative Audio">
+      🔊 <span id="sound-label">Audio: ON</span>
+    </button>
+  </div>
+
+  <!-- Main Bureaucratic Overlay Modal -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="dossier-window" id="dossier-window">
+      
+      <!-- Window header bar -->
+      <div class="dossier-header">
+        <div class="header-left">
+          <span class="eu-seal">🇪🇺 🍪</span>
+          <div class="header-titles">
+            <span class="dossier-title">E.U.C.O.O.K.I.E. DIRECTIVE (REVISED 2026/894-B)</span>
+            <span class="dossier-sub">Supreme Ministry of Digital Confectionery & Telepathic Surveillance</span>
+          </div>
+        </div>
+        <div class="header-badge" id="dossier-status-badge">STATUS: UNRESOLVED</div>
+      </div>
+
+      <!-- Bureaucratic Notice Banner -->
+      <div class="notice-banner">
+        ⚠️ <strong>LEGAL NOTICE:</strong> We value your privacy so intensely that reading this banner is legally binding under Section 42(a) of the Geneva Treaty on Baked Goods.
+      </div>
+
+      <!-- Scrollable content area -->
+      <div class="dossier-body" id="dossier-body">
+        
+        <!-- Tab navigation -->
+        <nav class="bureau-tabs">
+          <button class="tab-btn active" data-tab="consent-form">Form 1040-CRUMB (Consent)</button>
+          <button class="tab-btn" data-tab="notary-tab" id="notary-tab-btn">Notary Seal Chamber ⚖️</button>
+          <button class="tab-btn" data-tab="appeals-tab">Appeals Tribunal</button>
+        </nav>
+
+        <!-- TAB 1: Main Consent Form -->
+        <div class="tab-content active" id="consent-form">
+          <div class="article-intro">
+            <p>Before you may observe any digital kittenry, you must calibrate your philosophical, metaphysical, and biometric cookie allocation below. Default state is <em>"Total Unconditional Capitulation"</em>.</p>
+          </div>
+
+          <!-- Section 1: Strictly Unnecessary -->
+          <div class="category-card locked-card">
+            <div class="category-header">
+              <div class="cat-info">
+                <h3>1. Strictly Unnecessary Cookies</h3>
+                <p>Cookies required to prove that you exist and are currently regretting visiting this webpage.</p>
+              </div>
+              <div class="toggle-wrapper">
+                <input type="checkbox" id="unnecessary-toggle" checked disabled>
+                <label for="unnecessary-toggle" class="switch locked" title="Mandatory under Intergalactic Law"></label>
+                <span class="locked-hint">LOCKED (MANDATORY)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Functional Absurdity -->
+          <div class="category-card">
+            <div class="category-header">
+              <div class="cat-info">
+                <h3>2. Nostalgia & Regret Optimization Cookies</h3>
+                <p>Enables low-bitrate accordion background thoughts and remembers embarrassing things you said in 2014.</p>
+              </div>
+              <div class="toggle-wrapper">
+                <input type="checkbox" id="regret-toggle" checked>
+                <label for="regret-toggle" class="switch"></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: The Big One - Existential Tracking -->
+          <div class="category-card" id="existential-card">
+            <div class="category-header">
+              <div class="cat-info">
+                <h3>3. Existential Telepathy & Quantum Surveillance Cookies</h3>
+                <p>Permits our 4,812 advertising affiliates to monitor your circadian posture, dreams of falling, and refrigerator hum.</p>
+              </div>
+              <div class="toggle-wrapper">
+                <input type="checkbox" id="existential-toggle" checked>
+                <label for="existential-toggle" class="switch"></label>
+              </div>
+            </div>
+
+            <!-- Sub-clauses container (spawns when unchecking) -->
+            <div class="subclauses-container" id="subclauses-container">
+              <div class="subclause-warning">
+                🚨 <strong>OBJECTION DETECTED:</strong> Opting out of <em>Existential Telepathy</em> requires individual micro-denial of all 14 statutory sub-clauses below, followed by dynamic equilibrium calibration.
+              </div>
+              
+              <div class="subclauses-list" id="subclauses-list">
+                <!-- 14 items dynamically rendered or hardcoded -->
+              </div>
+
+              <!-- Balance Beam / Marble Game -->
+              <div class="balance-challenge" id="balance-challenge">
+                <div class="challenge-title">
+                  ⚖️ STATUTORY EQUILIBRIUM TEST (HUMAN INTENT VERIFICATION)
+                </div>
+                <p class="challenge-desc">Under Regulation 14-C, balance the official Marble of Free Will on the fulcrum for 3 continuous seconds to prove human agency.</p>
+                <div class="beam-stage" id="beam-stage">
+                  <div class="beam-fulcrum"></div>
+                  <div class="balance-beam" id="balance-beam">
+                    <div class="target-zone" id="target-zone">CENTER</div>
+                    <div class="marble" id="marble"></div>
+                  </div>
+                </div>
+                <div class="beam-controls">
+                  <label for="beam-tilt-slider">Fulcrum Angle Adjuster:</label>
+                  <input type="range" id="beam-tilt-slider" min="-30" max="30" value="0">
+                  <div class="balance-timer" id="balance-timer">Balance: 0.0s / 3.0s</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TAB 2: Notary Chamber -->
+        <div class="tab-content" id="notary-tab">
+          <div class="notary-chamber">
+            <div class="seal-graphic">🔏</div>
+            <h2>Supreme Notary Chamber</h2>
+            <p>To reject non-essential cookies without facing an administrative audit in Brussels, you must manually apply the <strong>Electronic Stamp of Solemn Refusal</strong>.</p>
+            
+            <div class="notary-status-card" id="notary-status-card">
+              <div class="status-row">
+                <span>Sub-Clauses Vetoed:</span>
+                <strong id="vetoed-counter">0 / 14</strong>
+              </div>
+              <div class="status-row">
+                <span>Fulcrum Equilibrium:</span>
+                <strong id="equilibrium-status" class="status-fail">UNVERIFIED</strong>
+              </div>
+              <div class="status-row">
+                <span>Notary Fee Paid:</span>
+                <strong class="status-pass">€0.00 (Waived for Proletariat)</strong>
+              </div>
+            </div>
+
+            <div class="stamp-action-area">
+              <button id="notary-stamp-btn" class="bureau-btn stamp-btn" disabled>
+                🔨 APPLY NOTARY STAMP OF REJECTION
+              </button>
+              <div class="stamp-hint" id="stamp-hint">Must veto all 14 sub-clauses and balance the marble first!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: Appeals Tribunal -->
+        <div class="tab-content" id="appeals-tab">
+          <div class="tribunal-box">
+            <h3>Administrative Complaints Office (Room 304-B)</h3>
+            <p>Office hours: Alternating Tuesdays between 03:15 AM and 03:22 AM (CET), excluding leap years and solar eclipses.</p>
+            <div class="form-group">
+              <label>Reason for Grievance:</label>
+              <select class="bureau-select" id="grievance-select">
+                <option>I just wanted to see a cat picture</option>
+                <option>My cursor has acquired sentience</option>
+                <option>Too many syllables in the terms of service</option>
+                <option>The cookie banner is taller than my monitor</option>
+                <option>I suspect the European Commission is watching my soup</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Formal Apology to the Commission:</label>
+              <textarea class="bureau-textarea" rows="3" placeholder="I hereby apologize for my impatience and reaffirm that cookies are essential to my spiritual nourishment..."></textarea>
+            </div>
+            <button class="bureau-btn secondary-btn" id="submit-appeal-btn">File Formal Objection (Queue: #41,902)</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Footer -->
+      <div class="dossier-footer">
+        <div class="footer-left">
+          <button class="bureau-btn text-link-btn" id="view-fine-print-btn">Read 142-Page Appendix</button>
+        </div>
+        <div class="footer-right">
+          <button class="bureau-btn reject-btn" id="footer-reject-btn" disabled>
+            ⚖️ Reject All (Notarization Required)
+          </button>
+          <button class="bureau-btn accept-btn" id="footer-accept-btn">
+            🍪 ACCEPT ALL & SURRENDER FIRSTBORN
+          </button>
+        </div>
+      </div>
+
+      <!-- Rubber Stamp Graphic Overlay (hidden until stamped) -->
+      <div class="stamp-overlay hidden" id="stamp-overlay">
+        <div class="stamp-border">
+          <div class="stamp-top">EUROPEAN COOKIE TRIBUNAL</div>
+          <div class="stamp-main">OFFICIALLY REJECTED</div>
+          <div class="stamp-bottom">NOTARIZED UNDER PROTEST • ART. 894-B</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Final Certificate / Ascension Modal -->
+  <div class="certificate-modal hidden" id="certificate-modal">
+    <div class="cert-card">
+      <div class="cert-ribbon">🎖️ OFFICIAL DIPLOMA 🎖️</div>
+      <h2>Certificate of Non-Consent</h2>
+      <p class="cert-body">
+        Be it known to all digital citizens, search spiders, and toaster algorithms that
+        <strong>THE CITIZEN AT IP [YOU]</strong> has successfully endured all 14 statutory sub-clauses,
+        mastered the Marble of Free Will, and legally rejected telemetry!
+      </p>
+      <div class="cert-seal">🇪🇺 🍪 ⚖️</div>
+      <p class="cert-reward">You may now finally observe the holy kitten.</p>
+      <button class="bureau-btn accept-btn" id="reveal-cat-btn">BEHOLD THE KITTEN</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+<script>window.__BORED_AI_SLUG__="bureaucratic-cookie-banner";</script>
+<script src="report-widget.js"></script>
+</body>
+</html>
